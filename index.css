@@ -1,2 +1,48 @@
+:root{
+    --stdHeight : 80px;
+}
+
 html, body {
-    color: blue;}
+    height : 100%;
+    width : 100%;
+    padding: 0%;
+    margin : 0%;
+    }
+
+header{
+    width: 100%;
+    height: var(--stdHeight);
+    position: absolute;
+    background-color: blue;
+
+}
+
+.map{
+    height : 100%;
+    width : 100%;
+    background-color: pink;
+
+}
+
+.leftControl{
+    height: calc(100% - var(--stdHeight));
+    width : var(--stdHeight);
+    position: absolute;
+    background-color: aliceblue;
+    top : var(--stdHeight);
+    left :0;
+
+
+}
+
+.list{
+    position: absolute;
+    background-color: yellow;
+    width:calc(100% - var(--stdHeight));
+    height: 20%;
+    bottom: 0;
+    left: var(--stdHeight);
+
+
+}
+
