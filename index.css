@@ -1,5 +1,10 @@
 :root{
     --stdHeight : 80px;
+    --blueDianne : #264653;
+    --jungleGreen : #2a9d8f;
+    --robRoy : #e9c46a;
+    --sandyBrown : #f4a261;
+    --burntSienna : #e76f51;
 }
 
 html, body {
