@@ -1,5 +1,5 @@
 :root{
-    --stdHeight : 80px;
+    --stdHeight : 120px;
 }
 
 html, body {
@@ -16,6 +16,72 @@ header{
     background-color: blue;
 
 }
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	list-style: none;
+	font-size: 18px;
+    position: relative;
+    margin: 0 0 5px 0;
+	padding: 0;
+    width: var(--stdHeight);
+}
+
+nav ul ul {
+	position: absolute;
+	top: -0.6em;
+	left: 85px;
+    font: 0/0 serif;
+	/* Unternavigation ausblenden */
+	
+	z-index: -1;
+    transition: font 0.5s;
+}
+
+nav ul li:hover ul,
+nav ul a:focus ~ ul {
+	font: inherit;
+	z-index: auto;
+	/*  Unternavigation einblenden */
+}
+
+@media (min-width: 30px) {
+	nav li {
+		font-size: 18px;
+	}
+}
+
+nav a {
+	display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid rgb(0, 44, 139);
+	border-radius: 10px;
+	box-shadow: 0 5px 10px white inset;
+	color: rgb(0, 119, 255);
+	background-color: rgb(0, 44, 139);
+	transition: all .25s ease-in;
+}
+
+nav li[aria-current] a {
+	background-color: black;
+	color: rgb(0, 119, 255);
+}
+
+nav a:focus,
+nav a:hover,
+nav li[aria-current] a:focus,
+nav li[aria-current] a:hover {
+	color: rgb(0, 44, 139);
+	background-color: rgb(0, 119, 255);
+}
+
 
 .map{
     height : 100%;
@@ -28,12 +94,12 @@ header{
     height: calc(100% - var(--stdHeight));
     width : var(--stdHeight);
     position: absolute;
-    background-color: aliceblue;
+    background-color: rgba(177, 248, 242, 0.877);
     top : var(--stdHeight);
     left :0;
-
-
 }
+
+ 
 
 .list{
     position: absolute;
