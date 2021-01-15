@@ -36,18 +36,74 @@ header{
     background-color: aliceblue;
     top : var(--stdHeight);
     left :0;
-
-
 }
 
 .list{
     position: absolute;
-    background-color: yellow;
+    background-color: #FFCF3E;
     width:calc(100% - var(--stdHeight));
     height: 20%;
     bottom: 0;
     left: var(--stdHeight);
-
-
 }
+
+/*List entry box*/
+#box {
+    height: 400px;
+    margin-bottom: 15%;
+}
+
+
+
+/*image*/
+.mg-col-4{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+}
+
+/*List content*/
+/*Title*/
+.listTitels{
+    font-size: medium;
+    color: #f39c18;
+    margin-top: 3%;
+}
+
+.listTitels:hover {
+    color: #f36818;
+    cursor: default;
+    text-decoration: none; /*doen´t work*/
+}
+
+/*Content*/
+
+.listDiscription {
+    font-size: small;
+    height: 40%;
+}
+
+a:hover {
+    cursor: default; *doesn´t work*/
+    text-decoration: none;/*doesn´t work*/
+    background-color: pink;
+}
+
+
+/*bottom*/
+#B {
+    background-color: ; /*does work*/
+    position: top; /*doen´t work*/
+}
+
+#B:hover {
+    cursor: default; /*doen´t work*/
+}
+
+/*to do*/
+/*cursor normal and line decor hover titel*/
+/*img size and cut out*/
+/*more>> & hide*/
+/**introduce change to heart botton/
+/*content block print*/
 
