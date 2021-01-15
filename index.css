@@ -84,15 +84,15 @@ header{
 }
 
 a:hover {
-    cursor: default; *doesn´t work*/
-    text-decoration: none;/*doesn´t work*/
+    cursor: default;
+    text-decoration: none;
     background-color: pink;
 }
 
 
 /*bottom*/
 #B {
-    background-color: ; /*does work*/
+    /* background-color: ; does work */
     position: top; /*doen´t work*/
 }
 
