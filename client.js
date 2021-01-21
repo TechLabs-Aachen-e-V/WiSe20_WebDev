@@ -1,6 +1,6 @@
 var likeButtons = document.getElementsByClassName("btn btn-outline-warning btn-sm bi bi-suit-heart");
 
-
+var joinButtons = document.getElementsByClassName("btn btn-outline-warning me-md-2 btn-sm mx-2");
 // for (let i = 0; i < likeButtons.length; i++) {
 //     likeButtons[i].isLiked = false;
 // }
