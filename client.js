@@ -1,19 +1,27 @@
 var likeButtons = document.getElementsByClassName("btn btn-outline-warning btn-sm bi bi-suit-heart");
 
 
-for (var i = 0; i < likeButtons.length; i++) {
-    likeButtons[i].isLiked = false;
-}
+// for (let i = 0; i < likeButtons.length; i++) {
+//     likeButtons[i].isLiked = false;
+// }
 
-for (var i = 0; i < likeButtons.length; i++) {
+for (let i = 0; i < likeButtons.length; i++) {
+    likeButtons[i].isLiked = false;
+    likeButtons[i].counter = 0;
     likeButtons[i].addEventListener("click", function () {
-        if (isLiked = false) {
+        if (likeButtons[i].isLiked == false) {
             likeButtons[i].style.backgroundColor = "#FFCF3E";
             likeButtons[i].isLiked = true;
+            likeButtons[i].counter += 1;
+            let currentLikes = likeButtons[i].counter;
+            console.log(currentLikes);
         }
         else {
             likeButtons[i].style.backgroundColor = "white";
             likeButtons[i].isLiked = false;
+            likeButtons[i].counter -= 1;
+            let currentLikes = likeButtons[i].counter;
+            console.log(currentLikes);
         }
     })
 }
