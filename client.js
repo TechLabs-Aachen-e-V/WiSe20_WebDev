@@ -37,3 +37,10 @@ for (let i = 0; i < likeButtons.length; i++) {
 //         likeButtons[2].isLiked = false;
 //     }
 // })
+
+
+//concept for the endlessly expanding feed:
+//-create List of entrys
+//-loop trough the list and create a card for each entry
+//-make ajax request when nearing the end of the page to add further entrys to the list
+//-maybe use infinite scroll
