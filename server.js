@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path')
 const mongoose = require('mongoose');
-const Campground = require('./models/campground')
+const Event = require('./models/event')
 
-mongoose.connect('mongodb://localhost:27017/yelp-camp', {
+mongoose.connect('mongodb://localhost:27017/locals-aachen', {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
@@ -24,14 +24,19 @@ app.get('/', (req, res) => {
     res.render('home')
 });
 
-app.get('/locals', async (req, res) => {
-    const campgrounds = await Campground.find({})
-    res.render('locals/index', { campgrounds })
+// app.use(express.urlencoded({ extended: true }));
+// app.use(methodOverride('_method'))
+
+//show everything
+app.get('/events', async (req, res) => {
+    const events = await Event.find({})
+    res.render('events/index', { events })
 });
 
-app.get('/locals/:id', async (req, res) => {
-    const campground = await Campground.findById(req.params.id)
-    res.render('locals/show', { campground });
+//show single event
+app.get('/events/:id', async (req, res) => {
+    const event = await Event.findById(req.params.id)
+    res.render('events/show', { event });
 });
 
 
