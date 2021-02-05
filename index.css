@@ -40,7 +40,7 @@ header{
 
 .list{
     position: absolute;
-    background-color: #FFCF3E;
+    background-color: var(--robRoy);
     width:calc(100% - var(--stdHeight));
     height: 20%;
     bottom: 0;
@@ -83,6 +83,31 @@ header{
     height: 40%;
 }
 
+.container{
+     background-color:lightgrey; 
+    
+
+     /* Laschet-Code */
+    /* background-image:   
+    
+    url("https://www.zdf.de/assets/armin-joe-laschet-100~2400x1350?cb=1606838960841");
+    
+  background-repeat: repeat-x;
+  background-position: 
+    0 20%,
+    0 100%,
+    0 50%,
+    0 100%,
+    0 0;
+  background-size: 
+    2500px,
+    800px,
+    500px 200px,
+    1000px,
+    400px 260px;
+  animation: 600s para infinite linear; */
+}
+
 a:hover {
     cursor: default;
     text-decoration: none;
@@ -100,10 +125,14 @@ a:hover {
     cursor: default; /*doen´t work*/
 }
 
-/*to do*/
-/*cursor normal and line decor hover titel*/
-/*img size and cut out*/
-/*more>> & hide*/
-/**introduce change to heart botton/
-/*content block print*/
 
+/* Laschet-Code */
+/* @keyframes para {
+    100% {
+      background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+      }} */
