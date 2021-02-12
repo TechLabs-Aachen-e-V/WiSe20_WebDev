@@ -68,6 +68,7 @@ header{
     font-size: medium;
     color: #f39c18;
     margin-top: 3%;
+    text-decoration: none;
 }
 
 .listTitels:hover {
@@ -228,3 +229,8 @@ a:hover {
 
 
 }
+
+/* Read more function */
+.more {display: none;}
+
+
