@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
+app.use('/public', express.static('public'));
 
 //show everything
 app.get('/events', async (req, res) => {

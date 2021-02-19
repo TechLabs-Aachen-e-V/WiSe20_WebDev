@@ -10,7 +10,7 @@
                 </div>
                 <div>
                     <label for="date">Date</label>
-                    <input class="form-control" type="text" placeholder="Date" name="event[date]" id="date">
+                    <input class="form-control" type="date" placeholder="Date" name="event[date]" id="date">
                 </div>
                 <div>
                     <label for="location">Location</label>
@@ -20,6 +20,10 @@
                     <label for="description">Description</label>
                     <input class="form-control" type="text" placeholder="Description" name="event[description]"
                         id="description" onkeyup="adjust_textarea(this)">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="file" class="form-control" id="inputGroupFile02" accept="image/*" name="event[file]">
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Add Event</button>
