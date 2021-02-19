@@ -176,3 +176,168 @@ a:hover {
 /**introduce change to heart botton/
 /*content block print*/
 
+/*Sandhyas Navcar CSS*/
+.navbar{
+  background-color: #264653;
+}
+
+.logo{
+      font-weight: bold;
+      letter-spacing: 5px;        
+      color :#f4a261;
+  }
+
+.logo:hover{
+  color :#b67c4c;
+}
+
+.navList{
+  display: flex;
+  justify-content: space-around;
+  padding:0;  
+}
+
+.nav-item{
+  padding-left : 40px;
+  padding-right : 40px;
+
+}
+
+.nav-link{          
+  color :#f4a261;
+}
+
+.nav-link:hover{
+  color :#b67c4c;
+}
+
+
+.disappear{
+  display:none;
+}
+
+.search-box
+{
+position : absolute;
+top : 30%;
+transform : translate(-20%,-20%);
+background : #e9c46a;
+height : 40px;
+border-radius : 40px;
+padding : 1px;
+display:flex;
+justify-content: space-around;
+right:0%;
+}
+.search-btn
+{
+color :#f4a261;
+float : right;
+width : 40px;
+height : 40px;
+border-radius: 50%;
+background : #264653;
+display:flex;
+justify-content: space-around;
+text-decoration: none;
+transition:0.4s;
+top:0;
+}
+
+.fa{
+  margin:30%;
+}
+.search-txt
+{
+border:none;
+background:none;
+outline:none;
+float:left;  
+color: #264653;
+font-size:16px;
+transition : 0.4s;
+line-height: 40px;
+width : 0px;
+}
+.search-box:hover > .search-txt
+{
+width: 180px;
+padding: 0 6px;
+}
+.search-box:hover > .search-btn
+{
+background:white;
+}
+
+/*Form CSS*/
+
+.new-event-form{
+  font-family: 'Open Sans Condensed', arial, sans;
+	width: 500px;
+	padding: 30px;
+	background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
+}
+.new-event-form h5{
+	background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #797979;
+	font-size: 18px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+.new-event-form input[type="text"],
+.new-event-form input[type="date"],
+.new-event-form input[type="datetime"],
+.new-event-form input[type="email"],
+.new-event-form input[type="number"],
+.new-event-form input[type="search"],
+.new-event-form input[type="time"],
+.new-event-form input[type="url"],
+.form-style-8 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+.new-event-form #description{
+	resize:none;
+	overflow: hidden;
+}
+.new-event-form input[type="button"], 
+.new-event-form input[type="submit"]{
+	-moz-box-shadow: inset 0px 1px 0px 0px #19333d;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #14272e;
+	box-shadow: inset 0px 1px 0px 0px #142830;
+	background-color: #264653;
+	border: 1px solid #142c35;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.new-event-form input[type="button"]:hover, 
+.new-event-form input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #476672 5%, #264653 100%);
+	background-color:#264653;
+}
