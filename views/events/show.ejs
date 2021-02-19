@@ -21,6 +21,6 @@
     <a href="/events" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">All Events</a>
     <a href="/events/<%= event._id %>/edit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit
         Event</a>
-    <form action="/events/<%= event._id %>?_method=DELETE" method="POST">
+    <form action="/events/<%= event._id %>" method="DELETE">
         <button class="btn btn-danger btn-lg active">Delete</button>
     </form>
