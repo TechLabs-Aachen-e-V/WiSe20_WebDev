@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path')
 const mongoose = require('mongoose');
+const ejsMate = require('ejs-mate');
 const methodOverride = require('method-override')
 const Event = require('./models/event')
 const { resolve } = require('dns');
@@ -19,6 +20,7 @@ db.once("open", () => {
 
 const app = express();
 
+app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'))
 
@@ -28,8 +30,6 @@ app.get('/', (req, res) => {
 
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'))
-app.use('/public', express.static('public'));
-
 
 //show everything
 app.get('/events', async (req, res) => {
@@ -71,7 +71,7 @@ app.put('/events/:id', async (req, res) => {
 //delete event
 app.delete('/events/:id', async (req, res) => {
     const { id } = req.params;
-    await Event.findByIdAndDelete(id);
+    await Event.findByIdAndDelete({ _id: id })
     res.redirect('/events')
 })
 
