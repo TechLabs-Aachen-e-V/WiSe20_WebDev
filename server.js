@@ -49,7 +49,7 @@ app.post('/events', async (req, res) => {
     res.redirect(`/events/${event._id}`)
 });
 
-//show Single event
+//show single event
 app.get('/events/:id', async (req, res) => {
     const event = await Event.findById(req.params.id)
     res.render('events/show', { event });
