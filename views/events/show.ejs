@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show</title>
-    <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
-<body>
+<% layout('layouts/boilerplate') %>
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -33,9 +22,5 @@
     <a href="/events/<%= event._id %>/edit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit
         Event</a>
     <form action="/events/<%= event._id %>?_method=DELETE" method="POST">
-        <button>Delete</button>
+        <button class="btn btn-danger btn-lg active">Delete</button>
     </form>
-
-</body>
-
-</html>
