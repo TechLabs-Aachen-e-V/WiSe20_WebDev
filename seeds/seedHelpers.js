@@ -3,7 +3,7 @@ module.exports.descriptors = [
     'Ancient',
     'Dark',
     'Roaring',
-    'Asian',
+    'Technical',
     'University',
     'Thrilling',
     'Öcher',
@@ -15,7 +15,7 @@ module.exports.descriptors = [
     'Future',
     'Football',
     'Engineer',
-    'Dusty',
+    'Crazy',
     'Professor'
 ]
 
