@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Event</title>
-    <link href="/public/assets/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
@@ -21,7 +21,7 @@
                 </div>
                 <div>
                     <label for="date">Date</label>
-                    <input class="form-control" type="date" placeholder="Date" name="event[date]" id="date">
+                    <input class="form-control" type="text" placeholder="Date" name="event[date]" id="date">
                 </div>
                 <div>
                     <label for="location">Location</label>
@@ -31,10 +31,6 @@
                     <label for="description">Description</label>
                     <input class="form-control" type="text" placeholder="Description" name="event[description]"
                         id="description">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="inputGroupFile02" accept="image/*" name="event[file]">
-                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
                 </div>
                 <br>
                 <button type="submit" class="btn btn-primary">Add Event</button>
