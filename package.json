@@ -1,13 +1,14 @@
 {
-  "name": "WiSe20_WebDev",
+  "name": "App",
   "version": "1.0.0",
   "description": "",
   "main": "client.js",
   "dependencies": {
-    "epress": "^0.0.1-security",
+    "ejs": "^3.1.5",
+    "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
-    "init": "^0.1.2",
-    "node": "^15.4.0"
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.13"
   },
   "devDependencies": {},
   "scripts": {
