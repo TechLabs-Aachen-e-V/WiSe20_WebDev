@@ -1,15 +1,8 @@
 {
-  "name": "WiSe20_WebDev",
+  "name": "wise20_webdev-1",
   "version": "1.0.0",
   "description": "",
   "main": "client.js",
-  "dependencies": {
-    "epress": "^0.0.1-security",
-    "express": "^4.17.1",
-    "init": "^0.1.2",
-    "node": "^15.4.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -18,11 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/TechLabs-Aachen-e-V/WiSe20_WebDev.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TechLabs-Aachen-e-V/WiSe20_WebDev/issues"
   },
-  "homepage": "https://github.com/TechLabs-Aachen-e-V/WiSe20_WebDev#readme"
+  "homepage": "https://github.com/TechLabs-Aachen-e-V/WiSe20_WebDev#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.17",
+    "multer": "^1.4.2"
+  }
 }
