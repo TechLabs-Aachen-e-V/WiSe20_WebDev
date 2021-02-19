@@ -1,0 +1,26 @@
+<% layout('layouts/boilerplate') %>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <form action="/events" method="POST">
+                <h1>
+                    <%= event.title %>
+                </h1>
+                <h2>
+                    <%= event.location %>
+                </h2>
+                <h2>
+                    <%= event.date %>
+                </h2>
+                <h2>
+                    <%= event.description %>
+                </h2>
+        </div>
+    </div>
+    <br>
+    <a href="/events" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">All Events</a>
+    <a href="/events/<%= event._id %>/edit" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Edit
+        Event</a>
+    <form action="/events/<%= event._id %>" method="DELETE">
+        <button class="btn btn-danger btn-lg active">Delete</button>
+    </form>
