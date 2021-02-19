@@ -1,0 +1,30 @@
+<% layout('layouts/boilerplate') %>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <form action="/events" method="POST">
+                <div>
+                    <label for="title">Title</label>
+                    <input class="form-control form-control-lg" type="text" placeholder="Event Title"
+                        name="event[title]" id="title">
+                </div>
+                <div>
+                    <label for="date">Date</label>
+                    <input class="form-control" type="text" placeholder="Date" name="event[date]" id="date">
+                </div>
+                <div>
+                    <label for="location">Location</label>
+                    <input class="form-control" type="text" placeholder="Location" name="event[location]" id="location">
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                    <input class="form-control" type="text" placeholder="Description" name="event[description]"
+                        id="description">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Add Event</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <a href="/events" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">All Events</a>
