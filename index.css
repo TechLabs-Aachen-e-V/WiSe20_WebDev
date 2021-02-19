@@ -83,22 +83,7 @@ header{
     height: 40%;
 }
 
-a:hover {
-    cursor: default; *doesn´t work*/
-    text-decoration: none;/*doesn´t work*/
-    background-color: pink;
-}
 
-
-/*bottom*/
-#B {
-    background-color: ; /*does work*/
-    position: top; /*doen´t work*/
-}
-
-#B:hover {
-    cursor: default; /*doen´t work*/
-}
 
 /*to do*/
 /*cursor normal and line decor hover titel*/
