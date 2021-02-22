@@ -1,0 +1,21 @@
+1. Download Mongo to run database
+    https://docs.mongodb.com/manual/administration/install-community/
+    Install Mongo according to your machine
+
+2. Create seed data in mongo database
+    Run --> npm seeds/index
+    It should create the database locals-aachen in mongo --> If something doesn't work here I forgot a step; just let me know and I'll research what you else you need to do.
+    Creates 50 seed cards in database
+    
+3. Enter database in mongo
+    You can find the mongo.exe in the folder bin in the programme folder created when doing the download. Open the programme and you'll be in the mongo terminal
+    Here you can see all databases with the command --> show dbs
+    If the database got created (see step 2) you should find locals-aachen among the databases
+    To enter the database use --> db.events.find()
+    It will open all the events that you created. I called them "events" to make it easier. To open more events type --> it
+
+4. Run the server
+    To run the server navigate to the folder where you saved your git local repository. Here you run the command --> nodemon server.js
+    In the last two lines it should show --> Listening on port 3000!//Database connected
+    Now enter your browser and type --> http://localhost:3000/events
+    Congrats! The server is running and should show the created events on the cards.
