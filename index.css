@@ -84,11 +84,6 @@ header{
     height: 40%;
 }
 
-a:hover {
-    cursor: default; *doesn´t work*/
-    text-decoration: none;/*doesn´t work*/
-    background-color: pink;
-}
 
 
 /*bottom*/
@@ -121,6 +116,7 @@ a:hover {
 
 .logo:hover{
     color :#b67c4c;
+    transform: scale(1.1);
 }
 
 .navList{
@@ -141,6 +137,7 @@ a:hover {
 
 .nav-link:hover{
     color :#b67c4c;
+    transform: scale(1.1);
 }
 
 
@@ -232,5 +229,15 @@ a:hover {
 
 /* Read more function */
 .more {display: none;}
+
+.myBtn{
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none!important;
+}
 
 
