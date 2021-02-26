@@ -1,6 +1,9 @@
 1. Download Mongo to run database
     https://docs.mongodb.com/manual/administration/install-community/
     Install Mongo according to your machine
+    
+    Second Option: How to install MongoDB (with bacth file)
+    https://zarkom.net/blogs/how-to-install-mongodb-for-development-in-windows-3328
 
 2. Create seed data in mongo database
     Run --> npm seeds/index
