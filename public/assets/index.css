@@ -18,7 +18,7 @@ header{
     width: 100%;
     height: var(--stdHeight);
     position: absolute;
-    background-color: #FFCF3E;
+
 }
 /*Language stetting*/
 
@@ -29,7 +29,7 @@ header{
     right: 110px;
     display: inline-block;
     margin-top: 22px;
-    color: rgb(143, 142, 142);
+    color: rgb(165, 7, 7);
     font-size: small;
 }
 /* The switch - the box around the slider */
@@ -96,18 +96,13 @@ header{
     border-radius: 50%;
   }
 
-.map{
-    height : 2000px;
-    width : 4000px;
-     
 
-}
 
 .leftControl{
     height: calc(100% - var(--stdHeight));
     width : var(--stdHeight);
     position: absolute;
-    background-color: aliceblue;
+    background-color: white;
     top : var(--stdHeight);
     left :0;
 }
@@ -223,7 +218,7 @@ header{
   position : absolute;
   top : 30%;
   transform : translate(-20%,-20%);
-  background : #e9c46a;
+  background :white;
   height : 40px;
   border-radius : 40px;
   padding : 1px;
@@ -362,9 +357,18 @@ header{
 }
 
 #mappington{
-  
-  height: 650px;
-  width:2000px;}
+    object-fit: fill;
+    display: block;
+    margin-left: 345px;
+    height: 650px;
+    width:1290px;}
+
+.map{
+    height : 2000px;
+    width : 4000px;
+    
+
+}
 /* nav bar styles */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
