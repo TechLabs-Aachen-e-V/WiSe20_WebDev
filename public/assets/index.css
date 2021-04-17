@@ -140,9 +140,10 @@ header{
 /*List content*/
 /*Title*/
 .listTitels{
-    font-size: medium;
+    font-size: 150%;
     color: #f39c18;
     margin-top: 3%;
+    font-family: 'Nunito', sans-serif;
 }
 
 .listTitels:hover {
@@ -159,7 +160,7 @@ header{
 }
 
 .container{
-  background-color:lightgrey; 
+  background-color:white;
 }
 
 a:hover {
