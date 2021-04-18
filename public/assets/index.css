@@ -100,14 +100,14 @@ header{
 
 .leftControl{
     height: calc(100% - var(--stdHeight));
-    width : 1000px;
+    width : 10px;
     position: absolute;
     top : var(--stdHeight);
     left :0;
     color :#f4a261;
 }
 
-.button1 {widt: 100px}
+
 
 .list{
     position: absolute;
@@ -116,6 +116,7 @@ header{
     height: 20%;
     bottom: 0;
     left: var(--stdHeight);
+
 }
 
 /*List entry box*/
@@ -130,15 +131,15 @@ header{
 .mg-col-4{
     width: 100%;
     height: 60%;
-    margin-top: 10px;
+    margin-top: 0.0001px;
     object-fit: cover;
 }
 
 /*List content*/
 /*Title*/
 .listTitels{
-    font-size: 150%;
-    margin-top: 3%;
+    font-size: 200%;
+    margin-top: 4%;
     font-family: 'Nunito', sans-serif;
     color :#f4a261;
 }
@@ -152,7 +153,7 @@ header{
 /*Content*/
 
 .listDiscription {
-    font-size: small;
+    font-size: 155%;
     height: 40%;
 }
 
@@ -367,16 +368,24 @@ header{
 #mappington{
     object-fit: fill;
     display: block;
-    margin-left: 345px;
-    height: 650px;
-    width:1290px;}
+    margin-left: 1px;
+    height: 590px;
+    width:1290px;
+    background: yellow;}
 
 .map{
-    height : 2000px;
-    width : 4000px;
-    
+    position: absolute;
+    height : 200px;
+    width : 400px;
+    background: yellow;
+    margin:0px;
+    left: 340px
+  
 
 }
+
+
+
 /* nav bar styles */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');

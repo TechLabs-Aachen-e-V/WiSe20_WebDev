@@ -7,7 +7,8 @@ const EventSchema = new Schema({
     category: String,
     date: String,
     location: String,
-    file: Buffer
+    file: Buffer,
+    img_url: String
 })
 
 module.exports = mongoose.model('Event', EventSchema)

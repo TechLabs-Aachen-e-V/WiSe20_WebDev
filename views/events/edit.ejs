@@ -2,6 +2,9 @@
     <h1>Edit Event</h1>
     <form action="/events/<%= event._id %>?_method=PUT " method="POST">
         <div>
+            <img src="<%= event.img_url %>" alt="image of a place" style="width: 20%; height: 20%" class="mg-col-4">
+        </div>
+        <div>
             <label for="title">Title</label>
             <input type="text" name="event[title]" id="title" value="<%= event.title %> ">
         </div>
