@@ -2,7 +2,7 @@
     --stdHeight : 80px;
     --blueDianne : #264653;
     --jungleGreen : #2a9d8f;
-    --robRoy : #e9c46a;
+    
     --sandyBrown : #f4a261;
     --burntSienna : #e76f51;
 }
@@ -100,12 +100,14 @@ header{
 
 .leftControl{
     height: calc(100% - var(--stdHeight));
-    width : var(--stdHeight);
+    width : 1000px;
     position: absolute;
-    background-color: white;
     top : var(--stdHeight);
     left :0;
+    color :#f4a261;
 }
+
+.button1 {widt: 100px}
 
 .list{
     position: absolute;
@@ -136,9 +138,9 @@ header{
 /*Title*/
 .listTitels{
     font-size: 150%;
-    color: #f39c18;
     margin-top: 3%;
     font-family: 'Nunito', sans-serif;
+    color :#f4a261;
 }
 
 .listTitels:hover {
@@ -166,6 +168,11 @@ header{
     cursor: default;
 }
 
+.btn{
+    width: 250px;
+    color:#f4a261;
+    border-color:#f4a261;
+}
 
 /*to do*/
 /*cursor normal and line decor hover titel*/
@@ -173,6 +180,7 @@ header{
 /*more>> & hide*/
 /**introduce change to heart botton/
 /*content block print*/
+
 
 .navbar{
     background-color: #264653;
