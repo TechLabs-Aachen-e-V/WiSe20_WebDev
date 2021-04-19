@@ -5,11 +5,11 @@
 As we are facing the second year of the corona pandemic and are about to enter our third lockdown, creating a website with the purpose of discovering events and places to meet other people, might not seem like a particularly good idea.
 <br> 
 Despite that, our group consists of hopeful and forward-looking members, who are firm in their belief, that after the pandemic there will be flocks of people gravitating towards anything even resembling some sort of event.
-With that in mind we wanted to create a hyperlocal platform for discovering events and cool places to meet up in Aachen.
+With that in mind we wanted to create a hyperlocal platform for discovering events and cool places in Aachen.
 
 ### Method
 
-As Stephen Sondheim once said :"*White. A blank page or canvas. So many possibilities. *".As for us, the blank canvas was a html page void of any content waiting to be filled. To decide how to fill that void, we first tried to create a sketch of the webpage, which, to be honest, wasn't pretty, but got us a rough sketch of where we wanted to go with our project.
+As Stephen Sondheim once said : *"White. A blank page or canvas. So many possibilities."* For us, the blank canvas was a html page void of any content waiting to be filled. To decide how to fill that void, we first tried to create a sketch of the webpage, which, to be honest, wasn't pretty, but got us a rough sketch of where we wanted to go with our project.
 
 
 ![concept.png](:/7dc486d3167d4f6daa1f1ae5e1971439)
@@ -67,7 +67,7 @@ With the thought of later adding new events to the page, we gave the grid an end
 
 #### Control Bar
 
-To give people easy access to their favorite kinds of events, we came up with the idea of a control panel, where the suer can select from a list of different activity types containing options such as sightseeing or hiking.
+To give people easy access to their favorite kinds of events, we came up with the idea of a control panel, where the user can select from a list of different activity types containing options such as sightseeing or hiking.
 
 
 
